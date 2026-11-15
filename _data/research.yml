@@ -141,14 +141,6 @@ projects:
     funder: ""
     role: "Co-PI"
     year: "2025"
-  - title: "Key problems of deep learning-based speech enhancement in real-world scenarios"
-    funder: ""
-    role: "Co-PI"
-    year: "2024"
-  - title: "Terahertz coded-aperture partitioned imaging based on denoising networks"
-    funder: ""
-    role: "Co-PI"
-    year: "2024"
 
 patents:
   - "Animal Behavior Recognition Method and System Based on Wavelet Packet Decomposition and State Space Model. A. Mao, D. Wang. 202610735265.9 (2026)."

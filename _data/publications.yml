@@ -53,11 +53,12 @@
 - id: sow-estrus
   type: journal
   title: "Monitoring of Sows' Standing Reflex During Estrus Based on Machine Vision"
-  authors: "Z. Hua, Y. Jiao, Axiu Mao, K. Cuan, Y. Wang, H. Zhao, Kaiying Wang"
+  authors: "Zhixin Hua, Yuchen Jiao, Axiu Mao, Kaixuan Cuan, Yanchao Wang, Hanxiao Zhao, Kaiying Wang"
   venue: "Agriculture"
   tag: "Agriculture'26"
   year: 2026
-  note: "accepted"
+  note: "16(20), 2176"
+  url: "https://www.mdpi.com/2077-0472/16/20/2176"
   topics: [vision]
 
 - id: ssl-pretraining
@@ -260,12 +261,13 @@
   tag: "IEEE BIBM'26"
   year: 2026
   note: "regular paper"
+  code: "https://github.com/Max-1234-hub/FedGM"
   image: "fedgm.jpg"
   topics: [others]
 
 - id: goat-ssm
   type: conference
-  title: "Goat Behavior Recognition via Convolutional Patch Encoding and State Space Modeling"
+  title: "Coordinated Time-Frequency Feature Fusion for Goat Behavior Recognition via Wavelet Decomposition and State Space Modeling"
   authors: "Dongfang Wang, Axiu Mao*, Lei Shen, Kaiying Wang"
   venue: "8th International Symposium on Animal Environment and Welfare"
   tag: "ISAEW'25"
@@ -275,10 +277,12 @@
 - id: cd-polypnet
   type: conference
   title: "CD-PolypNet: Cross-Domain Polyp Segmentation Network with Internal Feature Distillation and Dual-Stream Boundary Focus via Large Vision Model"
-  authors: "C. Yue, J. Zhao, X. Wang, Axiu Mao, J. Hou, C. Yan, K. Zhao, S. Wang"
+  authors: "Changpeng Yue, Jianxiang Zhao, Chao Wang, Xinglun Zhao, Axiu Mao, Jia Hou, Chenggang Yan, Kai Zhao, Shuai Wang"
   venue: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
   tag: "MICCAI'25"
   year: 2025
+  url: "https://link.springer.com/chapter/10.1007/978-3-032-05127-1_10"
+  code: "https://github.com/ChangpengYue/CD-PolypNet"
   topics: []
 
 - id: feather-2024
@@ -335,6 +339,7 @@
   venue: "2nd U.S. Precision Livestock Farming Conference"
   tag: "USPLF'23"
   year: 2023
+  url: "https://plf.tennessee.edu/wp-content/uploads/sites/229/2024/01/Robust-animal-activity-recognition-using-wearable-sensors.-A-correlation-distillation-based-information-recovery-method-toward-data-having-low-sampling-rates.pdf"
   image: "correlation-distillation.jpg"
   topics: [wearable]
 
@@ -345,6 +350,7 @@
   venue: "2nd U.S. Precision Livestock Farming Conference"
   tag: "USPLF'23"
   year: 2023
+  url: "https://plf.tennessee.edu/wp-content/uploads/sites/229/2024/01/Occlusion-resistant-locomotion-analysis-of-piglets-using-amodal-instance-segmentation.pdf"
   image: "locomotion.jpg"
   topics: [vision]
 
@@ -355,6 +361,7 @@
   venue: "10th European Conference on Precision Livestock Farming"
   tag: "ECPLF'22"
   year: 2022
+  url: "https://scholars.cityu.edu.hk/en/publications/uniting-farms(bb8e4ad6-d546-4961-9df4-0b4eb72e9727).html"
   image: "uniting-farms.jpg"
   topics: [others]
 
@@ -375,6 +382,7 @@
   venue: "6th International Symposium on Animal Environment and Welfare"
   tag: "ISAEW'21"
   year: 2021
+  url: "https://scholars.cityu.edu.hk/en/activities/6th-international-symposium-on-animal-environment-and-welfare-isaew-2021(8497b2ae-23a3-4b6a-a32c-ca6e139fffde).html"
   image: "cmi-net.jpg"
   topics: [multimodal]
 
@@ -385,6 +393,7 @@
   venue: "6th International Symposium on Animal Environment and Welfare"
   tag: "ISAEW'21"
   year: 2021
+  url: "https://scholars.cityu.edu.hk/en/publications/a-key-frame-selection-method-for-creating-deep-learning-training-/"
   image: "key-frame.jpg"
   topics: [vision]
 

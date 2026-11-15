@@ -3,6 +3,7 @@ layout: archive
 title: "Activity"
 permalink: /activity/
 author_profile: true
+hide_title: true   # the page starts directly with "Professional Service"
 ---
 
 Professional Service
