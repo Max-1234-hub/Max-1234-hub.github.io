@@ -42,3 +42,10 @@ author_profile: true
   {% endfor %}
   {% if y > 2023 %}</ol>{% endif %}
 {% endfor %}
+
+<h2 id="patents">Chinese Invention Patents</h2>
+<ol class="pub-list">
+  {% for patent in site.data.research.patents %}
+    <li>{{ patent | replace: "A. Mao", "<strong>A. Mao</strong>" }}</li>
+  {% endfor %}
+</ol>

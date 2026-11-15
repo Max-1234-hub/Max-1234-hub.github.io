@@ -1,0 +1,27 @@
+---
+layout: archive
+title: "Projects"
+permalink: /projects/
+author_profile: true
+---
+
+{% comment %} Project data lives in _data/research.yml under `projects`. {% endcomment %}
+{% assign projects = site.data.research.projects %}
+
+<h2>As Principal Investigator</h2>
+<ol class="project-list">
+  {% for project in projects %}
+    {% if project.role == "PI" %}
+      <li><strong>{{ project.title }}</strong><br>{% if project.funder != "" %}{{ project.funder }}, {% endif %}{{ project.year }}</li>
+    {% endif %}
+  {% endfor %}
+</ol>
+
+<h2>As Co-Principal Investigator</h2>
+<ol class="project-list">
+  {% for project in projects %}
+    {% if project.role == "Co-PI" %}
+      <li><strong>{{ project.title }}</strong><br>{% if project.funder != "" %}{{ project.funder }}, {% endif %}{{ project.year }}</li>
+    {% endif %}
+  {% endfor %}
+</ol>
