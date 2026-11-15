@@ -4,9 +4,8 @@
 
 pi:
   name: "Axiu Mao"
-  name_zh: "毛阿秀"
   photo: "profile.jpg"   # lives in /images/
-  role: "Principal Investigator"
+  role: "Since Dec. 2023"
   email: "axiu.mao@hdu.edu.cn"
 
 groups:

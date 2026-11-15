@@ -25,7 +25,7 @@ Teaching assistance at City University of Hong Kong (2019–2023)
 * VM 2003 Livestock Husbandry
 * GE 1351 Food Production and Security
 
-Competition Guidance
+Guidance
 ======
 
 Achievements of students under my supervision:
