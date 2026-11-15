@@ -1,0 +1,24 @@
+---
+layout: archive
+title: "Publications"
+permalink: /publications/
+author_profile: true
+---
+
+{% include base_path %}
+
+<p>* Corresponding author. An up-to-date list is also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+
+<h2 id="journal-articles">Journal Articles</h2>
+{% for pub in site.data.publications %}
+  {% if pub.type == "journal" %}
+    {% include pub-entry.html pub=pub %}
+  {% endif %}
+{% endfor %}
+
+<h2 id="conference-papers">Conference Papers</h2>
+{% for pub in site.data.publications %}
+  {% if pub.type == "conference" %}
+    {% include pub-entry.html pub=pub %}
+  {% endif %}
+{% endfor %}

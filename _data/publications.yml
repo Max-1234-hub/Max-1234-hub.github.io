@@ -1,0 +1,409 @@
+# All publications of the lab, newest first within each type.
+# This single file feeds the Publications page, the Research page and the CV page.
+#
+# Fields
+#   id      : unique key
+#   type    : journal | conference
+#   title   : paper title
+#   authors : author list ("*" marks corresponding authors; "Axiu Mao" is bolded automatically)
+#   venue   : full venue name          tag: short venue tag shown as a badge
+#   year    : publication year         note: optional extra info (volume, status, ...)
+#   url     : link to the paper        code: link to the code (both optional)
+#   image   : thumbnail in /images/pubs/ (optional)
+#   topics  : research topics the paper belongs to (ids defined in _data/research.yml)
+#   media   : optional list of press coverage (name + url)
+
+# ---------------------------------------------------------------- Journal articles
+- id: speccl
+  type: journal
+  title: "SpecCL: Spectral-Guided Contrastive Learning for Animal Activity Recognition Using Tri-Axial Accelerometer Signals"
+  authors: "Yonghua Wang, Axiu Mao*"
+  venue: "Signal, Image and Video Processing"
+  tag: "SIViP'26"
+  year: 2026
+  note: "20, 628"
+  url: "https://link.springer.com/article/10.1007/s11760-026-05694-8"
+  image: "speccl.jpg"
+  topics: [efficient]
+
+- id: sampling-rate
+  type: journal
+  title: "Toward Optimal Sampling Rate Selection and Unbiased Classification for Precise Activity Recognition of Farm Quadruped Animals"
+  authors: "Axiu Mao, Meilu Zhu*, Lei Shen, Xiaoshuai Wang, Tomas Norton, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'26"
+  year: 2026
+  note: "252, 112103"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169926006988"
+  image: "sampling-rate.jpg"
+  topics: [efficient]
+
+- id: multimodal-review
+  type: journal
+  title: "Beyond Single-Modality: A Comprehensive Review on Multimodal Fusion Paradigms in Precision Livestock Farming"
+  authors: "Axiu Mao*, Meilu Zhu, Yanzhen Li, Kaiying Wang*"
+  venue: "Smart Agricultural Technology"
+  tag: "SAT'26"
+  year: 2026
+  note: "102232"
+  url: "https://www.sciencedirect.com/science/article/pii/S2772375526004521"
+  image: "multimodal-review.jpg"
+  topics: [multimodal]
+
+- id: sow-estrus
+  type: journal
+  title: "Monitoring of Sows' Standing Reflex During Estrus Based on Machine Vision"
+  authors: "Z. Hua, Y. Jiao, Axiu Mao, K. Cuan, Y. Wang, H. Zhao, Kaiying Wang"
+  venue: "Agriculture"
+  tag: "Agriculture'26"
+  year: 2026
+  note: "accepted"
+  topics: [vision]
+
+- id: ssl-pretraining
+  type: journal
+  title: "Advancing Animal Behavior Recognition with Self-Supervised Pre-training on Unlabeled Data"
+  authors: "Axiu Mao, Miaoyun Peng, Guikun Liu, Meilu Zhu, Kaiying Wang*"
+  venue: "Scientific Reports"
+  tag: "Sci. Rep.'25"
+  year: 2025
+  note: "15(1), 43928"
+  url: "https://www.nature.com/articles/s41598-025-27736-w"
+  image: "ssl-pretraining.jpg"
+  topics: [efficient]
+
+- id: cksp
+  type: journal
+  title: "CKSP: Cross-species Knowledge Sharing and Preserving for Universal Animal Activity Recognition"
+  authors: "Axiu Mao, Meilu Zhu*, Zhaojin Guo, Zheng He, Tomas Norton, Kai Liu*"
+  venue: "Biosystems Engineering"
+  tag: "Biosyst. Eng.'25"
+  year: 2025
+  note: "259, 104303"
+  url: "https://www.sciencedirect.com/science/article/pii/S1537511025002399"
+  image: "cksp.jpg"
+  topics: [efficient]
+
+- id: social-cohesion
+  type: journal
+  title: "Characterization of Social Cohesion Status of Pre-weaning Piglets Based on Lightweight Pose Estimation"
+  authors: "Zheng He, Chuanyi Guo, Zhaojin Guo, Li Lyu, Endai Huang, Axiu Mao, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'25"
+  year: 2025
+  note: "229, 109716"
+  url: "https://www.sciencedirect.com/science/article/pii/S0168169924011074"
+  image: "social-cohesion.jpg"
+  topics: [vision]
+
+- id: deer
+  type: journal
+  title: "DEeR: Deviation Eliminating and Noise Regulating for Privacy-preserving Federated Low-rank Adaptation"
+  authors: "Meilu Zhu, Axiu Mao, Jun Liu*, Yixuan Yuan*"
+  venue: "IEEE Transactions on Medical Imaging"
+  tag: "IEEE TMI'24"
+  year: 2024
+  url: "https://ieeexplore.ieee.org/abstract/document/10807365"
+  image: "deer.jpg"
+  topics: [federated]
+
+- id: sca-convnet
+  type: journal
+  title: "Estimation of Cattle Weight from Composite Image/Height/Length Data with Spatial and Channel Attention Convolution Network (SCA-ConvNet)"
+  authors: "Leibin Lan, Lei Shen*, Huaxia Wang, Yudong Yao, Peng Zheng, Axiu Mao"
+  venue: "Signal, Image and Video Processing"
+  tag: "SIViP'24"
+  year: 2024
+  url: "https://link.springer.com/article/10.1007/s11760-024-03398-5"
+  image: "sca-convnet.jpg"
+  topics: [vision]
+
+- id: pigeon
+  type: journal
+  title: "Automatic Detection of Feral Pigeons in Urban Environments Using Deep Learning"
+  authors: "Zhaojin Guo, Zheng He, Li Lyu, Axiu Mao, Endai Huang, Kai Liu*"
+  venue: "Animals"
+  tag: "Animals'24"
+  year: 2024
+  note: "14(1), 159"
+  url: "https://www.mdpi.com/2076-2615/14/1/159"
+  image: "pigeon.jpg"
+  topics: [vision]
+
+- id: t2s-ir
+  type: journal
+  title: "A Teacher-to-Student Information Recovery Method Toward Energy-Efficient Animal Activity Recognition at Low Sampling Rates"
+  authors: "Axiu Mao, Meilu Zhu, Endai Huang, Xi Yao, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'23"
+  year: 2023
+  note: "213, 108242"
+  url: "https://www.sciencedirect.com/science/article/pii/S0168169923006300"
+  code: "https://github.com/Max-1234-hub/T2S-IR"
+  image: "t2s-ir.jpg"
+  topics: [efficient]
+
+- id: aar-review
+  type: journal
+  title: "Deep Learning-based Animal Activity Recognition with Wearable Sensors: Overview, Challenges, and Future Directions"
+  authors: "Axiu Mao, Endai Huang, Xiaoshuai Wang, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'23"
+  year: 2023
+  note: "211, 108043"
+  url: "https://www.sciencedirect.com/science/article/pii/S0168169923004313"
+  image: "aar-review.jpg"
+  topics: [efficient]
+
+- id: cclusnet-inseg
+  type: journal
+  title: "Occlusion-Resistant Instance Segmentation of Piglets in Farrowing Pens Using Center Clustering Network"
+  authors: "Endai Huang, Axiu Mao, Junhui Hou, Yongjian Wu, Weitao Xu, Maria Camila Ceballos, Thomas D. Parsons, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'23"
+  year: 2023
+  note: "210, 107950"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169923003381"
+  image: "cclusnet-inseg.jpg"
+  topics: [vision]
+
+- id: aisgan
+  type: journal
+  title: "A Semi-supervised Generative Adversarial Network for Amodal Instance Segmentation of Piglets in Farrowing Pens"
+  authors: "Endai Huang, Zheng He, Axiu Mao, Maria Camila Ceballos, Thomas D. Parsons, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'23"
+  year: 2023
+  note: "209, 107839"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169923002272"
+  image: "aisgan.jpg"
+  topics: [vision]
+
+- id: light-vgg11
+  type: journal
+  title: "Automated Identification of Chicken Distress Vocalizations Using Deep Learning Models"
+  authors: "Axiu Mao, Claire S. E. Giraudet, Kai Liu*, Inês De Almeida Nolasco, Zhiqin Xie, Zhixun Xie, Yue Gao, James Theobald, Devaki Bhatta, Rebecca Stewart, Alan G. McElligott*"
+  venue: "Journal of the Royal Society Interface"
+  tag: "J. R. Soc. Interface'22"
+  year: 2022
+  note: "19(191), 20210921"
+  url: "https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0921"
+  code: "https://github.com/Max-1234-hub/light-VGG11"
+  image: "light-vgg11.jpg"
+  topics: [audio]
+  media:
+    - name: "The Guardian"
+      url: "https://www.theguardian.com/science/2022/jun/29/ai-could-improve-welfare-of-farmed-chickens-by-listening-to-their-squawks"
+    - name: "Science"
+      url: "https://www.science.org/content/article/artificial-intelligence-could-spot-baby-chickens-distress"
+    - name: "New Scientist"
+      url: "https://www.newscientist.com/article/2326521-ai-that-detects-chicken-distress-calls-could-improve-farm-conditions/"
+    - name: "Scimex"
+      url: "https://www.scimex.org/newsfeed/algorithm-almost-im-peck-able-at-picking-up-chicken-distress-calls/"
+
+- id: fedaar
+  type: journal
+  title: "FedAAR: A Novel Federated Learning Framework for Animal Activity Recognition with Wearable Sensors"
+  authors: "Axiu Mao, Endai Huang, Haiming Gan, Kai Liu*"
+  venue: "Animals"
+  tag: "Animals'22"
+  year: 2022
+  note: "12(16), 2142"
+  url: "https://www.mdpi.com/2076-2615/12/16/2142"
+  code: "https://github.com/Max-1234-hub/FedAAR"
+  image: "fedaar.jpg"
+  topics: [federated]
+
+- id: suckling
+  type: journal
+  title: "Automated Detection and Analysis of Piglet Suckling Behaviour Using High-accuracy Amodal Instance Segmentation"
+  authors: "Haiming Gan, Mingqiang Ou, Chengpeng Li, Xiarui Wang, Jingfeng Guo, Axiu Mao, Maria Camila Ceballos, Thomas D. Parsons, Kai Liu*, Yueju Xue*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'22"
+  year: 2022
+  note: "199, 107162"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169922004793"
+  image: "suckling.jpg"
+  topics: [vision]
+
+- id: cmi-net
+  type: journal
+  title: "Cross-Modality Interaction Network for Equine Activity Recognition Using Imbalanced Multi-Modal Data"
+  authors: "Axiu Mao, Endai Huang, Haiming Gan, Rebecca S. V. Parkes, Weitao Xu, Kai Liu*"
+  venue: "Sensors"
+  tag: "Sensors'21"
+  year: 2021
+  note: "21(17), 5818"
+  url: "https://www.mdpi.com/1424-8220/21/17/5818"
+  code: "https://github.com/Max-1234-hub/CMI-Net"
+  image: "cmi-net.jpg"
+  topics: [multimodal]
+
+- id: cclusnet
+  type: journal
+  title: "Center Clustering Network Improves Piglet Counting Under Occlusion"
+  authors: "Endai Huang, Axiu Mao, Haiming Gan, Maria Camila Ceballos, Thomas D. Parsons, Yueju Xue, Kai Liu*"
+  venue: "Computers and Electronics in Agriculture"
+  tag: "COMPAG'21"
+  year: 2021
+  note: "189, 106417"
+  url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169921004348"
+  image: "cclusnet.jpg"
+  topics: [vision]
+
+# ---------------------------------------------------------------- Conference papers
+- id: fedgm
+  type: conference
+  title: "Target-Oriented Federated Gradient Matching for Assisting Resource-Constrained Client in Medical Image Segmentation"
+  authors: "Axiu Mao, Junlong Hang, Meilu Zhu*"
+  venue: "IEEE International Conference on Bioinformatics and Biomedicine"
+  tag: "IEEE BIBM'26"
+  year: 2026
+  note: "regular paper"
+  image: "fedgm.jpg"
+  topics: [federated]
+
+- id: goat-ssm
+  type: conference
+  title: "Goat Behavior Recognition via Convolutional Patch Encoding and State Space Modeling"
+  authors: "Dongfang Wang, Axiu Mao*, Lei Shen, Kaiying Wang"
+  venue: "8th International Symposium on Animal Environment and Welfare"
+  tag: "ISAEW'25"
+  year: 2025
+  topics: [efficient]
+
+- id: cd-polypnet
+  type: conference
+  title: "CD-PolypNet: Cross-Domain Polyp Segmentation Network with Internal Feature Distillation and Dual-Stream Boundary Focus via Large Vision Model"
+  authors: "C. Yue, J. Zhao, X. Wang, Axiu Mao, J. Hou, C. Yan, K. Zhao, S. Wang"
+  venue: "International Conference on Medical Image Computing and Computer-Assisted Intervention"
+  tag: "MICCAI'25"
+  year: 2025
+  topics: []
+
+- id: feather-2024
+  type: conference
+  title: "Deep Learning-based Assessment of Laying-hen Feather Conditions Using Color and Thermal Images"
+  authors: "Axiu Mao, Tomas Norton, Kai Liu"
+  venue: "4th Asian Conference on Precision Livestock Farming"
+  tag: "ACPLF'24"
+  year: 2024
+  topics: [multimodal]
+
+- id: cross-species
+  type: conference
+  title: "Cross-species Knowledge Sharing for Improved Animal Activity Recognition with Limited Labelled Data"
+  authors: "Axiu Mao, Meilu Zhu, Endai Huang, Zhaojin Guo, Zheng He, Li Lyu, Tomas Norton, Kai Liu*"
+  venue: "11th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'24"
+  year: 2024
+  image: "cross-species.jpg"
+  topics: [efficient]
+
+- id: demvpp-yolo
+  type: conference
+  title: "DeMVpp-YOLO: A Lightweight Pig Behaviour Detection Model for Improving Pig Health Management in Farrowing Pens"
+  authors: "Zhaojin Guo, Li Lyu, Zheng He, Chuanyi Guo, Axiu Mao, Endai Huang, Kai Liu*"
+  venue: "11th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'24"
+  year: 2024
+  image: "demvpp-yolo.jpg"
+  topics: [vision]
+
+- id: piglet-pose
+  type: conference
+  title: "Real-time Pose Estimation for Suckling Piglets Using Affordable Surveillance Cameras"
+  authors: "Zheng He, Chuanyi Guo, Zhaojin Guo, Li Lyu, Axiu Mao, Endai Huang, Kai Liu*"
+  venue: "11th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'24"
+  year: 2024
+  topics: [vision]
+
+- id: two-stage-id
+  type: conference
+  title: "A Two-Stage Computer Vision Framework for Individual Recognition and Precision Data Collection Illustrated through Piglets in Farrowing Pens"
+  authors: "Chuanyi Guo, Zhaojin Guo, T. Ede, Li Lyu, Zheng He, Axiu Mao, Thomas D. Parsons, Kai Liu*"
+  venue: "11th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'24"
+  year: 2024
+  topics: [vision]
+
+- id: correlation-distillation
+  type: conference
+  title: "Robust Animal Activity Recognition Using Wearable Sensors: A Correlation Distillation-based Information Recovery Method Toward Data Having Low Sampling Rates"
+  authors: "Axiu Mao, Endai Huang, Meilu Zhu, Kai Liu*"
+  venue: "2nd U.S. Precision Livestock Farming Conference"
+  tag: "USPLF'23"
+  year: 2023
+  image: "correlation-distillation.jpg"
+  topics: [efficient]
+
+- id: locomotion
+  type: conference
+  title: "Occlusion-resistant Locomotion Analysis of Piglets Using Amodal Instance Segmentation"
+  authors: "Haiming Gan, Axiu Mao, Cheryl Natalie Sze, Endai Huang, Maria Camila Ceballos, Thomas D. Parsons, Kai Liu*"
+  venue: "2nd U.S. Precision Livestock Farming Conference"
+  tag: "USPLF'23"
+  year: 2023
+  image: "locomotion.jpg"
+  topics: [vision]
+
+- id: uniting-farms
+  type: conference
+  title: "Uniting Farms: Federated Learning for Sensor-based Animal Activity Recognition"
+  authors: "Axiu Mao, Endai Huang, Haiming Gan, Kai Liu*"
+  venue: "10th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'22"
+  year: 2022
+  image: "uniting-farms.jpg"
+  topics: [federated]
+
+- id: spatial-distribution
+  type: conference
+  title: "Occlusion Resistant Spatial Analysis of Pig Distribution Pattern in Farrowing Pens Using Center Clustering Network"
+  authors: "Endai Huang, Axiu Mao, Haiming Gan, Kai Liu*"
+  venue: "10th European Conference on Precision Livestock Farming"
+  tag: "ECPLF'22"
+  year: 2022
+  image: "spatial-distribution.jpg"
+  topics: [vision]
+
+- id: cmi-net-isaew
+  type: conference
+  title: "Cross-Modality Interaction Network for Equine Activity Recognition Using Time-Series Motion Data"
+  authors: "Axiu Mao, Endai Huang, Weitao Xu, Kai Liu*"
+  venue: "6th International Symposium on Animal Environment and Welfare"
+  tag: "ISAEW'21"
+  year: 2021
+  image: "cmi-net.jpg"
+  topics: [multimodal]
+
+- id: key-frame
+  type: conference
+  title: "A Key Frame Selection Method for Creating Deep Learning Training Set in Animal Research Involving Time-Series Video Data"
+  authors: "Endai Huang, Axiu Mao, Haiming Gan, Kai Liu*"
+  venue: "6th International Symposium on Animal Environment and Welfare"
+  tag: "ISAEW'21"
+  year: 2021
+  image: "key-frame.jpg"
+  topics: [vision]
+
+- id: capacity-limit
+  type: conference
+  title: "Capacity Limit of Deep Learning Methods on Scenarios of Pigs in Farrowing Pen under Occlusion"
+  authors: "Endai Huang, Axiu Mao, Maria Camila Ceballos, Thomas D. Parsons, Kai Liu*"
+  venue: "ASABE Annual International Virtual Meeting"
+  tag: "ASABE'21"
+  year: 2021
+  url: "https://elibrary.asabe.org/abstract.asp?JID=5&AID=52461&CID=virt2021&T=1"
+  image: "capacity-limit.jpg"
+  topics: [vision]
+
+- id: feather-2020
+  type: conference
+  title: "Deep Learning-based Assessment of Laying-hen Feather Conditions Using Color and Thermal Images"
+  authors: "Endai Huang, Axiu Mao, Kai Liu*, Yueju Xue"
+  venue: "2nd Asian Conference on Precision Livestock Farming"
+  tag: "ACPLF'20"
+  year: 2020
+  topics: [multimodal]

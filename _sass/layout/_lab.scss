@@ -1,0 +1,306 @@
+/* ==========================================================================
+   LAB PAGES (research, publications, team, news)
+   ========================================================================== */
+
+/* Accent colour of each research topic; ids match _data/research.yml */
+$topic-colors: (
+  vision: #2f7f93,
+  multimodal: #7b5ea7,
+  efficient: #c9742a,
+  federated: #3a8f5c,
+  audio: #b8504d,
+);
+
+/* Figures: kept on a white card so that paper figures stay readable in the dark theme */
+.lab-figure {
+  margin: 1.5em 0;
+  padding: 0.75em;
+  background: #fff;
+  border: 1px solid var(--global-border-color);
+  border-radius: $border-radius;
+  text-align: center;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  &__caption {
+    margin: 0.75em 0 0;
+    color: #5f666c;
+    font-size: $type-size-6;
+    line-height: 1.5;
+  }
+}
+
+/* Research page */
+.research-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  margin: 1.5em 0 0;
+
+  &__item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.35em 0.8em 0.35em 0.4em;
+    border: 1px solid var(--global-border-color);
+    border-radius: 2em;
+    font-size: $type-size-6;
+    font-weight: bold;
+    text-decoration: none !important;
+    color: var(--global-text-color);
+
+    span {
+      display: inline-block;
+      width: 1.7em;
+      margin-right: 0.5em;
+      border-radius: 50%;
+      color: #fff;
+      line-height: 1.7em;
+      text-align: center;
+    }
+  }
+
+  @each $id, $color in $topic-colors {
+    &__item--#{$id} span {
+      background: $color;
+    }
+  }
+}
+
+.research-topic {
+  margin-top: 3em;
+  scroll-margin-top: $masthead-height + 10px;
+
+  h2 {
+    display: flex;
+    align-items: center;
+    margin: 0 0 0.25em;
+    padding-bottom: 0.4em;
+    border-bottom: 1px solid var(--global-border-color);
+    line-height: 1.25;
+  }
+
+  &__number {
+    flex: none;
+    width: 1.6em;
+    margin-right: 0.5em;
+    border-radius: 50%;
+    background: var(--global-base-color);
+    color: #fff;
+    font-size: 0.8em;
+    line-height: 1.6em;
+    text-align: center;
+  }
+
+  &__keywords {
+    margin: 0.5em 0 1em;
+    opacity: 0.75;
+    font-size: $type-size-6;
+    font-weight: bold;
+    letter-spacing: 0.02em;
+  }
+
+  &__pubs-title {
+    margin: 1.5em 0 0.5em;
+    font-weight: bold;
+  }
+
+  @each $id, $color in $topic-colors {
+    &--#{$id} {
+      .research-topic__number,
+      .venue-tag {
+        background: $color;
+      }
+    }
+  }
+}
+
+.project-list li {
+  margin-bottom: 0.75em;
+}
+
+/* Compact publication lines */
+.pub-lines {
+  padding-left: 0;
+  list-style: none;
+
+  .pub-line {
+    margin-bottom: 0.6em;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+}
+
+.venue-tag {
+  display: inline-block;
+  margin-right: 0.4em;
+  padding: 0.05em 0.5em;
+  border-radius: 3px;
+  background: var(--global-base-color);
+  color: #fff;
+  font-size: 0.8em;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.pub-link {
+  margin-left: 0.3em;
+  white-space: nowrap;
+}
+
+/* Publication entries with thumbnails */
+.pub-entry {
+  display: flex;
+  gap: 1.25em;
+  align-items: flex-start;
+  margin: 0 0 1.75em;
+
+  &__thumb {
+    flex: none;
+    width: 190px;
+    padding: 4px;
+    background: #fff;
+    border: 1px solid var(--global-border-color);
+    border-radius: $border-radius;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 104px;
+      object-fit: contain;
+    }
+  }
+
+  &__placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 104px;
+    background: #eef3f5;
+    color: #2f7f93;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  &__body {
+    flex: 1;
+    min-width: 0;
+
+    p {
+      margin: 0 0 0.2em;
+      font-size: 0.9em;
+      line-height: 1.5;
+    }
+  }
+
+  p.pub-entry__title {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  &__note {
+    opacity: 0.75;
+  }
+
+  &__links a {
+    margin-right: 0.5em;
+    white-space: nowrap;
+  }
+
+  @include breakpoint(max-width $small) {
+    display: block;
+
+    &__thumb {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+/* Team page */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1.5em 1em;
+  margin: 1em 0 2em;
+}
+
+.team-card {
+  text-align: center;
+
+  &__photo {
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 0.6em;
+    border-radius: 50%;
+    object-fit: cover;
+
+    &--initials {
+      background: var(--global-base-color);
+      color: #fff;
+      font-size: 1.6em;
+      font-weight: bold;
+      line-height: 110px;
+    }
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.85em;
+    line-height: 1.4;
+  }
+
+  p.team-card__name {
+    font-size: 0.95em;
+    font-weight: bold;
+
+    span {
+      font-weight: normal;
+    }
+  }
+
+  &__role {
+    opacity: 0.75;
+  }
+}
+
+/* Dated lists (news, awards) */
+.dated-list {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    gap: 1em;
+    margin-bottom: 0.5em;
+    font-size: 0.9em;
+    line-height: 1.5;
+  }
+
+  &__date {
+    flex: none;
+    width: 5.5em;
+    color: var(--global-base-color);
+    font-weight: bold;
+    white-space: nowrap;
+  }
+
+  &--scroll {
+    max-height: 22em;
+    padding-right: 0.5em;
+    overflow-y: auto;
+  }
+}
+
+/* Home page */
+.home-topics {
+  padding-left: 1.25em;
+
+  li {
+    margin-bottom: 0.25em;
+  }
+}

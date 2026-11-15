@@ -1,0 +1,71 @@
+---
+layout: archive
+title: "Research"
+permalink: /research/
+author_profile: true
+---
+
+{% include base_path %}
+{% assign research = site.data.research %}
+
+<div class="research">
+
+  {% for paragraph in research.intro %}
+    <p>{{ paragraph }}</p>
+  {% endfor %}
+
+  <div class="lab-figure">
+    <img src="{{ base_path }}/images/research/{{ research.overview_figure }}" alt="Overview of the lab's research: multimodal sensing, five research directions, and applications">
+    <p class="lab-figure__caption">{{ research.overview_caption }}</p>
+  </div>
+
+  <nav class="research-toc">
+    {% for topic in research.topics %}
+      <a class="research-toc__item research-toc__item--{{ topic.id }}" href="#{{ topic.id }}"><span>{{ topic.number }}</span>{{ topic.title }}</a>
+    {% endfor %}
+  </nav>
+
+  {% for topic in research.topics %}
+    <section class="research-topic research-topic--{{ topic.id }}" id="{{ topic.id }}">
+      <h2><span class="research-topic__number">{{ topic.number }}</span>{{ topic.title }}</h2>
+      <p class="research-topic__keywords">{{ topic.keywords }}</p>
+
+      {% for paragraph in topic.summary %}
+        <p>{{ paragraph }}</p>
+      {% endfor %}
+
+      <div class="lab-figure">
+        <a href="{{ base_path }}/images/research/{{ topic.figure }}"><img src="{{ base_path }}/images/research/{{ topic.figure }}" alt="{{ topic.caption }}" loading="lazy"></a>
+        <p class="lab-figure__caption">{{ topic.caption }}</p>
+      </div>
+
+      <p class="research-topic__pubs-title">Relevant publications</p>
+      <ul class="pub-lines">
+        {% for pub in site.data.publications %}
+          {% if pub.topics contains topic.id %}
+            {% include pub-line.html pub=pub %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+
+  <section class="research-topic" id="projects">
+    <h2>Funded Projects</h2>
+    <ul class="project-list">
+      {% for project in research.projects %}
+        <li><strong>{{ project.title }}</strong><br>{{ project.funder }}, {{ project.year }} ({{ project.role }})</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section class="research-topic" id="patents">
+    <h2>Chinese Invention Patents</h2>
+    <ul class="project-list">
+      {% for patent in research.patents %}
+        <li>{{ patent }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+</div>

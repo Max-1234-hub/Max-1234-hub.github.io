@@ -1,0 +1,155 @@
+# Content of the Research page (/research/).
+# Each topic pairs one overview figure (in /images/research/) with a summary; the list of
+# relevant papers is pulled automatically from _data/publications.yml through the `topics` field.
+
+intro:
+  - >-
+    Our lab works at the intersection of artificial intelligence and animal science. We develop
+    deep learning methods that perceive animals through cameras, wearable sensors and microphones,
+    and that stay reliable under the conditions real farms impose: crowded and occluded scenes,
+    scarce labels, tight battery and compute budgets, and data that cannot leave the farm.
+  - >-
+    The long-term goal is a universal multimodal framework that monitors the behaviour, health and
+    welfare of different animal species, and that eventually closes the loop to environmental control
+    in precision livestock farming.
+
+overview_figure: "overview.svg"
+overview_caption: >-
+  Research overview. Signals from cameras, wearable sensors and microphones are turned into
+  decisions for animal management through five connected research directions.
+
+topics:
+  - id: vision
+    number: 1
+    title: "Visual Perception in Crowded and Occluded Scenes"
+    keywords: "Instance segmentation · counting · amodal segmentation · small-object detection · pose estimation"
+    figure: "topic-vision.jpg"
+    caption: "Representative vision work: occlusion-resistant segmentation and counting, spatial-distribution analysis, amodal segmentation, and small-object detection."
+    summary:
+      - >-
+        Cameras allow contact-free, stress-free monitoring, but in real pens animals are small, look
+        alike, and are constantly hidden by crates, pen fixtures and each other. We design vision
+        models that remain accurate under these conditions.
+      - >-
+        Our Center Clustering Network (CClusnet) predicts a semantic mask together with centre-offset
+        vectors and groups pixels by density clustering, so piglets are counted and segmented without
+        anchor boxes even when only parts of their bodies are visible. A semi-supervised generative
+        adversarial network then infers the occluded parts of each animal (amodal segmentation), which
+        opens the door to fine-grained analysis of suckling, locomotion and spatial-distribution
+        patterns in farrowing pens.
+      - >-
+        The same ideas extend beyond the pig pen: small-object detection of feral pigeons in urban
+        scenes, lightweight pose estimation for characterising social behaviour, image-based
+        body-weight estimation in cattle, and vision-based oestrus monitoring in sows.
+
+  - id: multimodal
+    number: 2
+    title: "Multimodal Fusion Learning"
+    keywords: "Cross-modal attention · vision–motion fusion · class imbalance · fusion paradigms"
+    figure: "topic-multimodal.jpg"
+    caption: "Top: our taxonomy of multimodal fusion paradigms in precision livestock farming. Bottom: the cross-modality interaction network (CMI-Net)."
+    summary:
+      - >-
+        No single sensor tells the whole story: a camera loses animals behind obstacles, a collar sees
+        motion but not context, and a microphone hears a barn rather than an individual. We study how
+        heterogeneous modalities can complement one another instead of simply being concatenated.
+      - >-
+        CMI-Net, our cross-modality interaction network, lets accelerometer and gyroscope streams
+        recalibrate each other through attention, suppressing noisy and redundant information, while a
+        class-balanced focal loss counters the heavily imbalanced activity classes found in real
+        recordings. Our review of multimodal fusion in precision livestock farming organises the field
+        by modality type, fusion stage and modality homogeneity, and gives practical recommendations
+        for choosing a fusion strategy.
+      - >-
+        Ongoing work, supported by the National Natural Science Foundation of China, combines computer
+        vision with wearable sensors to track and recognise the behaviour of individual animals in
+        group housing.
+
+  - id: efficient
+    number: 3
+    title: "Data-Efficient and Lightweight Activity Recognition with Wearable Sensors"
+    keywords: "Knowledge distillation · self-supervised pre-training · contrastive learning · cross-species transfer · state space models"
+    figure: "topic-efficient.jpg"
+    caption: "From the sensing pipeline (a) to methods that cope with low sampling rates (b), unlabeled data (c, e) and multiple species (d)."
+    summary:
+      - >-
+        Wearable inertial sensors record behaviour around the clock, yet three practical limits hold
+        the technology back: collars run on small batteries, labelled data are expensive to collect,
+        and a model trained on one species rarely transfers to another.
+      - >-
+        To save energy, our teacher-to-student information recovery method (T2S-IR) lets a model
+        working on low-sampling-rate data recover the information it is missing from a teacher trained
+        on high-rate data, and a follow-up study shows how to select the sampling rate and remove
+        classifier bias across farm quadrupeds. To reduce the need for labels, we pre-train models on
+        unlabeled sensor data with self-supervision in the time and frequency domains, and use
+        spectral priors to guide contrastive learning (SpecCL).
+      - >-
+        To move beyond one-model-per-species, CKSP shares knowledge that is common to horses, sheep and
+        cattle while preserving what is specific to each. We also explore compact state-space models
+        for efficient on-device recognition.
+
+  - id: federated
+    number: 4
+    title: "Privacy-Preserving Federated Learning"
+    keywords: "Federated learning · data heterogeneity · low-rank adaptation of foundation models · differential privacy"
+    figure: "topic-federated.jpg"
+    caption: "Federated learning across farms (a, b) and across hospitals with foundation models and resource-constrained clients (c, d)."
+    summary:
+      - >-
+        Larger and more diverse datasets make better models, but farms and hospitals cannot simply
+        pool their raw data. Federated learning trains a shared model while the data stay where they
+        were collected.
+      - >-
+        FedAAR brings this idea to animal activity recognition: a prototype-guided local update and a
+        gradient-refinement-based aggregation keep the global model stable when the data distributions
+        of different farms disagree.
+      - >-
+        With collaborators in medical imaging we push the same principle to large models. DEeR
+        eliminates the aggregation deviation and regulates the differential-privacy noise that arise
+        when low-rank adapters of foundation models are trained in a federated way, and our
+        target-oriented federated gradient matching helps a resource-constrained client benefit from
+        resource-rich ones in medical image segmentation.
+
+  - id: audio
+    number: 5
+    title: "Bioacoustics and Audio Signal Analysis"
+    keywords: "Vocalisation monitoring · log-Mel spectrograms · lightweight CNNs · data augmentation"
+    figure: "topic-audio.jpg"
+    caption: "Light-VGG11 identifies chicken distress calls in recordings with natural barn noise."
+    summary:
+      - >-
+        Vocalisations are a direct window into how animals feel. Chicken distress calls, for example,
+        are an "iceberg indicator" of welfare problems, but listening for them by hand is slow and
+        subjective.
+      - >-
+        Together with animal-behaviour scientists we developed light-VGG11, a lightweight
+        convolutional network that turns audio recognition into image classification on log-Mel
+        spectrograms. It picks out distress calls from natural barn sounds with 97% accuracy, and data
+        augmentation makes up for the limited amount and diversity of labelled recordings.
+      - >-
+        The work was reported by The Guardian, Science, New Scientist and many other international
+        media outlets.
+
+projects:
+  - title: "Combination of computer vision and wearable sensors for animal monitoring"
+    funder: "Young Scientists Fund, National Natural Science Foundation of China (NSFC)"
+    role: "PI"
+    year: "2024"
+  - title: "Multi-modal fusion technique applied in animal behaviour and health monitoring"
+    funder: "New Research Initiatives, Hangzhou Dianzi University"
+    role: "PI"
+    year: "2024"
+  - title: "General animal behaviour monitoring framework based on motion sensors"
+    funder: "Open Fund, Key Laboratory of Equipment and Informatization in Environment Controlled Agriculture, Ministry of Agriculture and Rural Affairs"
+    role: "PI"
+    year: "2025"
+  - title: "Remote sensing and control system for embodied intelligence"
+    funder: "Key Research and Development Program of Zhejiang Province"
+    role: "Co-PI"
+    year: "2025"
+
+patents:
+  - "Animal Behavior Recognition Method and System Based on Wavelet Packet Decomposition and State Space Model. A. Mao, D. Wang. 202610735265.9 (2026)."
+  - "Animal Behavior Recognition Method and System Based on Semantic Distillation and Feature Compensation. A. Mao, Z. Chen, J. Hang, M. Zhu, J. Wang. 202610696616.X (2026)."
+  - "A Self-Supervised Pre-training Based Approach for Enhanced Animal Behavior Recognition. A. Mao, M. Zhu, K. Wang, M. Peng, Y. Li, Z. Chen, K. Xu, F. Gan, L. Yan. 202510885312.3 (2025)."
+  - "A Multimodal Framework for Individual Pig Tracking in Groups Using Spatial Priors. A. Mao, M. Zhu, Q. Ren, Y. Wang. 202410931370.0 (2025)."

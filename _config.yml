@@ -1,0 +1,198 @@
+# Site configuration for the Mao Lab homepage (built on the Academic Pages template).
+# This file is *NOT* reloaded automatically by `jekyll serve`; restart the server after editing it.
+
+# Basic Site Settings
+locale                   : "en-US"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Mao Lab @ HDU"
+title_separator          : "-"
+name                     : &name "Axiu Mao"
+description              : &description "Mao Lab at Hangzhou Dianzi University: deep learning and multimodal intelligent perception for smart animal monitoring and precision livestock farming."
+url                      : https://max-1234-hub.github.io # "https://[your GitHub username].github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
+repository               : "Max-1234-hub/Max-1234-hub.github.io"
+
+# Site Author - shown in the left-hand sidebar.
+#               If a field is blank the icon and link will not appear.
+#               Additional customization can be done by editing /_includes/author-profile.html
+author:
+  # Biographic information
+  avatar           : "profile.jpg"
+  name             : "Axiu Mao (毛阿秀)"
+  pronouns         :
+  bio              : "Principal Investigator · Pre-tenured Associate Professor"
+  location         : "Hangzhou, China"
+  employer         : "Hangzhou Dianzi University"
+  uri              :
+  email            : "axiu.mao@hdu.edu.cn"
+
+  # Academic websites
+  googlescholar    : "https://scholar.google.com.hk/citations?hl=zh-CN&user=Wu9cCvAAAAAJ"
+  orcid            :
+  researchgate     : "https://www.researchgate.net/profile/Axiu-Mao-2"
+
+  # Repositories and software development
+  github           : "Max-1234-hub"
+
+  # Social media
+  twitter          : "Max_MAO123"
+
+# Site Settings
+teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
+breadcrumbs              : false # true, false (default)
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
+comments:
+  provider               : # false (default)
+atom_feed:
+  hide                   : true     # no blog posts on this site, so the RSS feed link is hidden
+
+
+# SEO Related
+google_site_verification : "yy_3iiS_X6pJdegdwitJMrH0LRLHXwpjrV9RKLXxKjg"
+bing_site_verification   :
+alexa_site_verification  :
+yandex_site_verification :
+
+
+# Social Sharing
+twitter:
+  username               : "Max_MAO123"
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : "team/group-photo.jpg"   # Social media default site image (lives in /images/)
+og_description           :
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   :
+  links:
+
+
+# Analytics
+analytics:
+  provider               :  "false" # false (default), "google", "google-universal", "google-analytics-4", "custom"
+  google:
+    tracking_id          :
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .github
+  - .jekyll-assets-cache
+  - .sass-cache
+  - assets/js/_main.js
+  - assets/js/plugins
+  - assets/js/vendor
+  - CHANGELOG
+  - Capfile
+  - config
+  - Dockerfile
+  - docker-compose.yaml
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - local
+  - log
+  - node_modules
+  - package.json*
+  - Rakefile
+  - README.md
+  - tmp
+  - vendor
+keep_files:
+  - .git
+  - .svn
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  header_links: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+
+# These settings control how pages are included in the site
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+
+
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+
+# Outputting
+permalink: /:categories/:title/
+timezone: Asia/Shanghai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+# Mimic GitHub Pages with --safe
+whitelist:
+  - jekyll-feed
+  - jekyll-gist
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-redirect-from
+  - jemoji
+
+
+# Archives
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+
+# HTML Compression
+# - https://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  ignore:
+    envs: development

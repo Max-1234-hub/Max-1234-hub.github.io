@@ -1,0 +1,54 @@
+---
+layout: archive
+title: "Team"
+permalink: /team/
+author_profile: true
+---
+
+{% include base_path %}
+{% assign team = site.data.team %}
+
+<div class="lab-figure">
+  <img src="{{ base_path }}/images/team/group-photo.jpg" alt="Group photo of the lab at the School of Communication Engineering, Hangzhou Dianzi University">
+  <p class="lab-figure__caption">The lab at the School of Communication Engineering, Hangzhou Dianzi University.</p>
+</div>
+
+<h2>Principal Investigator</h2>
+<div class="team-grid">
+  <div class="team-card">
+    <img class="team-card__photo" src="{{ base_path }}/images/{{ team.pi.photo }}" alt="{{ team.pi.name }}">
+    <p class="team-card__name">{{ team.pi.name }} <span lang="zh">{{ team.pi.name_zh }}</span></p>
+    <p class="team-card__role">{{ team.pi.role }}</p>
+    <p class="team-card__role"><a href="mailto:{{ team.pi.email }}">{{ team.pi.email }}</a></p>
+  </div>
+</div>
+
+{% for group in team.groups %}
+  <h2>{{ group.title }}</h2>
+  <div class="team-grid">
+    {% for member in group.members %}
+      <div class="team-card">
+        {% if member.photo %}
+          <img class="team-card__photo" src="{{ base_path }}/images/team/{{ member.photo }}" alt="{{ member.name }}">
+        {% else %}
+          <div class="team-card__photo team-card__photo--initials" aria-hidden="true">{{ member.initials }}</div>
+        {% endif %}
+        <p class="team-card__name">{{ member.name }} <span lang="zh">{{ member.name_zh }}</span></p>
+        <p class="team-card__role">{{ member.cohort }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endfor %}
+
+<h2>Undergraduate Researchers</h2>
+<p>More than ten undergraduate students work with us on research projects, innovation programmes and competitions every year.</p>
+
+<h2>Student Achievements</h2>
+<ul class="dated-list">
+  {% for award in team.student_awards %}
+    <li><span class="dated-list__date">{{ award.date }}</span><span>{{ award.text }}</span></li>
+  {% endfor %}
+</ul>
+
+<h2 id="join-us">Join Us</h2>
+<p>We welcome motivated M.Sc. and undergraduate students with a background in communication engineering, computer science, artificial intelligence or agricultural engineering, and we are open to collaborations with research groups and industry. If you are interested, please email <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a> with your CV.</p>

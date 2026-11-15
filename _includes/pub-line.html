@@ -1,0 +1,6 @@
+{% comment %} One-line publication entry, used in the Research and CV pages. Usage: include pub-line.html pub=pub {% endcomment %}
+<li class="pub-line">
+  <span class="venue-tag">{{ include.pub.tag }}</span>
+  {% if include.pub.url %}<a href="{{ include.pub.url }}">{{ include.pub.title }}</a>{% else %}{{ include.pub.title }}{% endif %}
+  {% if include.pub.code %}<a class="pub-link" href="{{ include.pub.code }}">[Code]</a>{% endif %}
+</li>

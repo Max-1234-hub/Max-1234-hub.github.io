@@ -1,0 +1,21 @@
+{% comment %} Publication entry with thumbnail, used in the Publications page. Usage: include pub-entry.html pub=pub {% endcomment %}
+{% include base_path %}
+<div class="pub-entry" id="{{ include.pub.id }}">
+  <div class="pub-entry__thumb">
+    {% if include.pub.image %}
+      <img src="{{ base_path }}/images/pubs/{{ include.pub.image }}" alt="" loading="lazy">
+    {% else %}
+      <div class="pub-entry__placeholder">{{ include.pub.tag }}</div>
+    {% endif %}
+  </div>
+  <div class="pub-entry__body">
+    <p class="pub-entry__title">{{ include.pub.title }}</p>
+    <p class="pub-entry__authors">{{ include.pub.authors | replace: "Axiu Mao", "<strong>Axiu Mao</strong>" }}</p>
+    <p class="pub-entry__venue"><em>{{ include.pub.venue }}</em>, {{ include.pub.year }}{% if include.pub.note %} <span class="pub-entry__note">({{ include.pub.note }})</span>{% endif %}</p>
+    <p class="pub-entry__links">
+      {% if include.pub.url %}<a href="{{ include.pub.url }}">[Paper]</a>{% endif %}
+      {% if include.pub.code %}<a href="{{ include.pub.code }}">[Code]</a>{% endif %}
+      {% for m in include.pub.media %}<a href="{{ m.url }}">[{{ m.name }}]</a>{% endfor %}
+    </p>
+  </div>
+</div>
