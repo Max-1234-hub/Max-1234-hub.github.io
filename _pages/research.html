@@ -52,9 +52,21 @@ author_profile: true
 
   <section class="research-topic" id="projects">
     <h2>Funded Projects</h2>
+    <h3>As Principal Investigator</h3>
     <ul class="project-list">
       {% for project in research.projects %}
-        <li><strong>{{ project.title }}</strong><br>{{ project.funder }}, {{ project.year }} ({{ project.role }})</li>
+        {% if project.role == "PI" %}
+          <li><strong>{{ project.title }}</strong><br>{% if project.funder != "" %}{{ project.funder }}, {% endif %}{{ project.year }}</li>
+        {% endif %}
+      {% endfor %}
+    </ul>
+
+    <h3>As Co-Principal Investigator</h3>
+    <ul class="project-list">
+      {% for project in research.projects %}
+        {% if project.role == "Co-PI" %}
+          <li><strong>{{ project.title }}</strong><br>{% if project.funder != "" %}{{ project.funder }}, {% endif %}{{ project.year }}</li>
+        {% endif %}
       {% endfor %}
     </ul>
   </section>

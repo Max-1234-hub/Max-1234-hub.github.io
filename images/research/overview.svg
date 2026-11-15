@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" role="img" aria-labelledby="t d">
-  <title id="t">Research overview of the Mao Lab</title>
-  <desc id="d">Signals from cameras, wearable sensors and microphones feed five research directions, which support applications in animal monitoring and precision livestock farming.</desc>
+  <title id="t">Research overview</title>
+  <desc id="d">Signals from wearable sensors, cameras and microphones feed four research directions, which support applications in animal monitoring and precision livestock farming.</desc>
   <defs>
     <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
       <path d="M0 0 L10 5 L0 10 z" fill="#8a949c"/>
@@ -23,36 +23,32 @@
 
   <!-- column 1: sensing -->
   <g>
-    <rect x="30" y="92" width="240" height="118" rx="10" fill="#eef5f7" stroke="#2f7f93" stroke-width="1.5"/>
-    <!-- camera icon -->
-    <g transform="translate(52,116)" fill="none" stroke="#2f7f93" stroke-width="3" stroke-linejoin="round">
+    <rect x="30" y="92" width="240" height="118" rx="10" fill="#fbf3ea" stroke="#c9742a" stroke-width="1.5"/>
+    <path d="M50 151 h10 l6 -22 l9 44 l9 -34 l8 22 l6 -10 h14" fill="none" stroke="#c9742a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
+    <text x="128" y="134" font-size="19" font-weight="700" fill="#c9742a">Motion</text>
+    <text x="128" y="158" font-size="14.5" fill="#4a5258">Wearable inertial</text>
+    <text x="128" y="177" font-size="14.5" fill="#4a5258">sensors</text>
+
+    <rect x="30" y="232" width="240" height="118" rx="10" fill="#eef5f7" stroke="#2f7f93" stroke-width="1.5"/>
+    <g transform="translate(52,256)" fill="none" stroke="#2f7f93" stroke-width="3" stroke-linejoin="round">
       <rect x="0" y="8" width="44" height="30" rx="5"/>
       <path d="M44 18 L60 9 L60 37 L44 28 z"/>
     </g>
-    <text x="128" y="134" font-size="19" font-weight="700" fill="#2f7f93">Vision</text>
-    <text x="128" y="158" font-size="14.5" fill="#4a5258">RGB and thermal</text>
-    <text x="128" y="177" font-size="14.5" fill="#4a5258">cameras</text>
+    <text x="128" y="274" font-size="19" font-weight="700" fill="#2f7f93">Vision</text>
+    <text x="128" y="298" font-size="14.5" fill="#4a5258">RGB and thermal</text>
+    <text x="128" y="317" font-size="14.5" fill="#4a5258">cameras</text>
 
-    <rect x="30" y="232" width="240" height="118" rx="10" fill="#fbf3ea" stroke="#c9742a" stroke-width="1.5"/>
-    <!-- waveform icon -->
-    <path d="M50 291 h10 l6 -22 l9 44 l9 -34 l8 22 l6 -10 h14" fill="none" stroke="#c9742a" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/>
-    <text x="128" y="274" font-size="19" font-weight="700" fill="#c9742a">Motion</text>
-    <text x="128" y="298" font-size="14.5" fill="#4a5258">Wearable inertial</text>
-    <text x="128" y="317" font-size="14.5" fill="#4a5258">sensors</text>
-
-    <rect x="30" y="372" width="240" height="118" rx="10" fill="#f9eeee" stroke="#b8504d" stroke-width="1.5"/>
-    <!-- microphone icon -->
-    <g transform="translate(62,394)" fill="none" stroke="#b8504d" stroke-width="3" stroke-linecap="round">
+    <rect x="30" y="372" width="240" height="118" rx="10" fill="#eef4f0" stroke="#3a8f5c" stroke-width="1.5"/>
+    <g transform="translate(62,394)" fill="none" stroke="#3a8f5c" stroke-width="3" stroke-linecap="round">
       <rect x="8" y="0" width="20" height="38" rx="10"/>
       <path d="M0 26 a18 18 0 0 0 36 0"/>
       <path d="M18 44 v14 M6 58 h24"/>
     </g>
-    <text x="128" y="414" font-size="19" font-weight="700" fill="#b8504d">Sound</text>
+    <text x="128" y="414" font-size="19" font-weight="700" fill="#3a8f5c">Sound</text>
     <text x="128" y="438" font-size="14.5" fill="#4a5258">Microphones in</text>
     <text x="128" y="457" font-size="14.5" fill="#4a5258">barns</text>
   </g>
 
-  <!-- arrows column 1 -> 2 and 2 -> 3 -->
   <g stroke="#8a949c" stroke-width="2.5" fill="none" marker-end="url(#arrow)">
     <path d="M282 291 H338"/>
     <path d="M862 291 H918"/>
@@ -63,49 +59,43 @@
     <rect x="350" y="92" width="500" height="398" rx="12" fill="#f7f8f9" stroke="#d5d9dc" stroke-width="1.5"/>
 
     <g font-size="17" font-weight="700" fill="#ffffff">
-      <rect x="370" y="110" width="460" height="62" rx="8" fill="#2f7f93"/>
-      <circle cx="401" cy="141" r="15" fill="#ffffff" fill-opacity="0.22"/>
-      <text x="401" y="147" text-anchor="middle">1</text>
-      <text x="428" y="136">Visual perception</text>
+      <rect x="370" y="110" width="460" height="80" rx="8" fill="#c9742a"/>
+      <circle cx="401" cy="150" r="15" fill="#ffffff" fill-opacity="0.22"/>
+      <text x="401" y="156" text-anchor="middle">1</text>
+      <text x="428" y="143">Wearable sensor-based activity recognition</text>
 
-      <rect x="370" y="184" width="460" height="62" rx="8" fill="#7b5ea7"/>
-      <circle cx="401" cy="215" r="15" fill="#ffffff" fill-opacity="0.22"/>
-      <text x="401" y="221" text-anchor="middle">2</text>
-      <text x="428" y="210">Multimodal fusion learning</text>
+      <rect x="370" y="204" width="460" height="80" rx="8" fill="#2f7f93"/>
+      <circle cx="401" cy="244" r="15" fill="#ffffff" fill-opacity="0.22"/>
+      <text x="401" y="250" text-anchor="middle">2</text>
+      <text x="428" y="237">Visual perception</text>
 
-      <rect x="370" y="258" width="460" height="62" rx="8" fill="#c9742a"/>
-      <circle cx="401" cy="289" r="15" fill="#ffffff" fill-opacity="0.22"/>
-      <text x="401" y="295" text-anchor="middle">3</text>
-      <text x="428" y="284">Data-efficient and lightweight learning</text>
+      <rect x="370" y="298" width="460" height="80" rx="8" fill="#7b5ea7"/>
+      <circle cx="401" cy="338" r="15" fill="#ffffff" fill-opacity="0.22"/>
+      <text x="401" y="344" text-anchor="middle">3</text>
+      <text x="428" y="331">Multimodal fusion learning</text>
 
-      <rect x="370" y="332" width="460" height="62" rx="8" fill="#3a8f5c"/>
-      <circle cx="401" cy="363" r="15" fill="#ffffff" fill-opacity="0.22"/>
-      <text x="401" y="369" text-anchor="middle">4</text>
-      <text x="428" y="358">Privacy-preserving federated learning</text>
-
-      <rect x="370" y="406" width="460" height="62" rx="8" fill="#b8504d"/>
-      <circle cx="401" cy="437" r="15" fill="#ffffff" fill-opacity="0.22"/>
-      <text x="401" y="443" text-anchor="middle">5</text>
-      <text x="428" y="432">Bioacoustics and audio analysis</text>
+      <rect x="370" y="392" width="460" height="80" rx="8" fill="#3a8f5c"/>
+      <circle cx="401" cy="432" r="15" fill="#ffffff" fill-opacity="0.22"/>
+      <text x="401" y="438" text-anchor="middle">4</text>
+      <text x="428" y="425">Others</text>
     </g>
     <g font-size="13.5" fill="#ffffff">
-      <text x="428" y="157">Segmentation, counting and pose under occlusion</text>
-      <text x="428" y="231">Cross-modal attention; vision–motion fusion</text>
-      <text x="428" y="305">Distillation, self-supervision, cross-species transfer</text>
-      <text x="428" y="379">Models trained across farms without sharing raw data</text>
-      <text x="428" y="453">Vocalisation recognition in noisy barns</text>
+      <text x="428" y="166">Distillation, self-supervision, cross-species transfer</text>
+      <text x="428" y="260">Segmentation, counting and pose under occlusion</text>
+      <text x="428" y="354">Cross-modal attention; vision–motion fusion</text>
+      <text x="428" y="448">Federated learning; bioacoustics</text>
     </g>
   </g>
 
   <!-- column 3: applications -->
   <g font-size="16" font-weight="700" fill="#3d4449">
     <rect x="930" y="92" width="240" height="86" rx="10" fill="#ffffff" stroke="#b3bac0" stroke-width="1.5"/>
-    <text x="1050" y="130" text-anchor="middle">Identification</text>
-    <text x="1050" y="152" text-anchor="middle">and tracking</text>
+    <text x="1050" y="130" text-anchor="middle">Behaviour and activity</text>
+    <text x="1050" y="152" text-anchor="middle">recognition</text>
 
     <rect x="930" y="196" width="240" height="86" rx="10" fill="#ffffff" stroke="#b3bac0" stroke-width="1.5"/>
-    <text x="1050" y="234" text-anchor="middle">Behaviour and activity</text>
-    <text x="1050" y="256" text-anchor="middle">recognition</text>
+    <text x="1050" y="234" text-anchor="middle">Identification</text>
+    <text x="1050" y="256" text-anchor="middle">and tracking</text>
 
     <rect x="930" y="300" width="240" height="86" rx="10" fill="#ffffff" stroke="#b3bac0" stroke-width="1.5"/>
     <text x="1050" y="338" text-anchor="middle">Health and welfare</text>
@@ -116,7 +106,6 @@
     <text x="1050" y="464" text-anchor="middle">and decision support</text>
   </g>
 
-  <!-- goal band -->
   <rect x="30" y="518" width="1140" height="56" rx="10" fill="#2b3a44"/>
   <text x="600" y="553" font-size="17" fill="#ffffff" text-anchor="middle"><tspan font-weight="700">Goal:</tspan> a universal, trustworthy multimodal framework for precision livestock farming across species</text>
 </svg>

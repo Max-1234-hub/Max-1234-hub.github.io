@@ -24,7 +24,7 @@
   note: "20, 628"
   url: "https://link.springer.com/article/10.1007/s11760-026-05694-8"
   image: "speccl.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: sampling-rate
   type: journal
@@ -36,7 +36,7 @@
   note: "252, 112103"
   url: "https://www.sciencedirect.com/science/article/abs/pii/S0168169926006988"
   image: "sampling-rate.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: multimodal-review
   type: journal
@@ -70,7 +70,7 @@
   note: "15(1), 43928"
   url: "https://www.nature.com/articles/s41598-025-27736-w"
   image: "ssl-pretraining.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: cksp
   type: journal
@@ -82,7 +82,7 @@
   note: "259, 104303"
   url: "https://www.sciencedirect.com/science/article/pii/S1537511025002399"
   image: "cksp.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: social-cohesion
   type: journal
@@ -105,7 +105,7 @@
   year: 2024
   url: "https://ieeexplore.ieee.org/abstract/document/10807365"
   image: "deer.jpg"
-  topics: [federated]
+  topics: [others]
 
 - id: sca-convnet
   type: journal
@@ -141,7 +141,7 @@
   url: "https://www.sciencedirect.com/science/article/pii/S0168169923006300"
   code: "https://github.com/Max-1234-hub/T2S-IR"
   image: "t2s-ir.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: aar-review
   type: journal
@@ -153,7 +153,7 @@
   note: "211, 108043"
   url: "https://www.sciencedirect.com/science/article/pii/S0168169923004313"
   image: "aar-review.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: cclusnet-inseg
   type: journal
@@ -190,7 +190,7 @@
   url: "https://royalsocietypublishing.org/doi/10.1098/rsif.2021.0921"
   code: "https://github.com/Max-1234-hub/light-VGG11"
   image: "light-vgg11.jpg"
-  topics: [audio]
+  topics: [others]
   media:
     - name: "The Guardian"
       url: "https://www.theguardian.com/science/2022/jun/29/ai-could-improve-welfare-of-farmed-chickens-by-listening-to-their-squawks"
@@ -212,7 +212,7 @@
   url: "https://www.mdpi.com/2076-2615/12/16/2142"
   code: "https://github.com/Max-1234-hub/FedAAR"
   image: "fedaar.jpg"
-  topics: [federated]
+  topics: [others]
 
 - id: suckling
   type: journal
@@ -261,7 +261,7 @@
   year: 2026
   note: "regular paper"
   image: "fedgm.jpg"
-  topics: [federated]
+  topics: [others]
 
 - id: goat-ssm
   type: conference
@@ -270,7 +270,7 @@
   venue: "8th International Symposium on Animal Environment and Welfare"
   tag: "ISAEW'25"
   year: 2025
-  topics: [efficient]
+  topics: [wearable]
 
 - id: cd-polypnet
   type: conference
@@ -298,7 +298,7 @@
   tag: "ECPLF'24"
   year: 2024
   image: "cross-species.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: demvpp-yolo
   type: conference
@@ -336,7 +336,7 @@
   tag: "USPLF'23"
   year: 2023
   image: "correlation-distillation.jpg"
-  topics: [efficient]
+  topics: [wearable]
 
 - id: locomotion
   type: conference
@@ -356,7 +356,7 @@
   tag: "ECPLF'22"
   year: 2022
   image: "uniting-farms.jpg"
-  topics: [federated]
+  topics: [others]
 
 - id: spatial-distribution
   type: conference

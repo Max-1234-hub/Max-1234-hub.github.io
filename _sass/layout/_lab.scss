@@ -4,11 +4,10 @@
 
 /* Accent colour of each research topic; ids match _data/research.yml */
 $topic-colors: (
+  wearable: #c9742a,
   vision: #2f7f93,
   multimodal: #7b5ea7,
-  efficient: #c9742a,
-  federated: #3a8f5c,
-  audio: #b8504d,
+  others: #3a8f5c,
 );
 
 /* Figures: kept on a white card so that paper figures stay readable in the dark theme */

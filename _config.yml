@@ -1,13 +1,13 @@
-# Site configuration for the Mao Lab homepage (built on the Academic Pages template).
+# Site configuration for Dr. Axiu Mao's homepage (built on the Academic Pages template).
 # This file is *NOT* reloaded automatically by `jekyll serve`; restart the server after editing it.
 
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Mao Lab @ HDU"
+title                    : "Dr. Mao's Homepage"
 title_separator          : "-"
 name                     : &name "Axiu Mao"
-description              : &description "Mao Lab at Hangzhou Dianzi University: deep learning and multimodal intelligent perception for smart animal monitoring and precision livestock farming."
+description              : &description "Homepage of Dr. Axiu Mao, Hangzhou Dianzi University: deep learning and multimodal intelligent perception for smart animal monitoring and precision livestock farming."
 url                      : https://max-1234-hub.github.io # "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Max-1234-hub/Max-1234-hub.github.io"
@@ -20,7 +20,7 @@ author:
   avatar           : "profile.jpg"
   name             : "Axiu Mao (毛阿秀)"
   pronouns         :
-  bio              : "Principal Investigator · Pre-tenured Associate Professor"
+  bio              : "Pre-tenured Associate Professor"
   location         : "Hangzhou, China"
   employer         : "Hangzhou Dianzi University"
   uri              :
@@ -63,7 +63,7 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 : "team/group-photo.jpg"   # Social media default site image (lives in /images/)
+og_image                 : "profile.jpg"   # Social media default site image (lives in /images/)
 og_description           :
 social:
   type                   : # Person or Organization (defaults to Person)
