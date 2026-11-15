@@ -27,7 +27,7 @@ Oral Reports
 ======
 
 <ul class="dated-list">
-<li><span class="dated-list__date">Oct. 2024</span><span>4th Asian Conference on Precision Livestock Farming (ACPLF 2024), Beijing, China — <i>Deep learning-based assessment of laying-hen feather conditions using color and thermal images</i></span></li>
+<li><span class="dated-list__date">Oct. 2024</span><span>4th Asian Conference on Precision Livestock Farming (ACPLF 2024), Beijing, China — <i>A general animal behaviour monitoring framework based on wearable sensors</i></span></li>
 <li><span class="dated-list__date">Sep. 2024</span><span>11th European Conference on Precision Livestock Farming (ECPLF 2024), Bologna, Italy — <i>Cross-species knowledge sharing for improved animal activity recognition with limited labelled data</i></span></li>
 <li><span class="dated-list__date">May 2023</span><span>2nd U.S. Precision Livestock Farming Conference (USPLF 2023), Tennessee, USA — <i>Robust animal activity recognition using wearable sensors: a correlation distillation-based information recovery method toward data having low sampling rates</i></span></li>
 <li><span class="dated-list__date">Aug. 2022</span><span>10th European Conference on Precision Livestock Farming (ECPLF 2022), Vienna, Austria — <i>Uniting farms: federated learning for sensor-based animal activity recognition</i></span></li>
