@@ -285,14 +285,14 @@
   code: "https://github.com/ChangpengYue/CD-PolypNet"
   topics: []
 
-- id: feather-2024
+- id: behaviour-framework-2024
   type: conference
-  title: "Deep Learning-based Assessment of Laying-hen Feather Conditions Using Color and Thermal Images"
+  title: "A General Animal Behaviour Monitoring Framework Based on Wearable Sensors"
   authors: "Axiu Mao, Tomas Norton, Kai Liu"
   venue: "4th Asian Conference on Precision Livestock Farming"
   tag: "ACPLF'24"
   year: 2024
-  topics: [multimodal]
+  topics: [wearable]
 
 - id: cross-species
   type: conference
