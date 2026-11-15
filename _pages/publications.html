@@ -9,12 +9,17 @@ author_profile: true
 
 <p>* Corresponding author. An up-to-date list is also available on <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
 
-{% comment %} Groups: one per recent year, then everything from 2023 and before. Journals before conferences in each group. {% endcomment %}
+{% comment %}
+  Groups: one per year from 2024 on, then everything from 2023 and before.
+  Journals are always listed before conferences. Only the "2023 and Before" group
+  shows separate "Journal Articles" / "Conference Papers" sub-headings.
+{% endcomment %}
 {% assign groups = "2026,2025,2024,2023" | split: "," %}
+{% assign types = "journal,conference" | split: "," %}
 {% for g in groups %}
   {% assign y = g | plus: 0 %}
   <h2 id="y{{ g }}">{% if y == 2023 %}2023 and Before{% else %}{{ g }}{% endif %}</h2>
-  {% assign types = "journal,conference" | split: "," %}
+  {% if y > 2023 %}<ol class="pub-list">{% endif %}
   {% for t in types %}
     {% assign shown = false %}
     {% for pub in site.data.publications %}
@@ -24,13 +29,16 @@ author_profile: true
       {% else %}
         {% if pub.year != y %}{% continue %}{% endif %}
       {% endif %}
-      {% unless shown %}
-        <p class="pub-group-title">{% if t == "journal" %}Journal Articles{% else %}Conference Papers{% endif %}</p>
-        <ol class="pub-list">
-        {% assign shown = true %}
-      {% endunless %}
+      {% if y == 2023 %}
+        {% unless shown %}
+          <p class="pub-group-title">{% if t == "journal" %}Journal Articles{% else %}Conference Papers{% endif %}</p>
+          <ol class="pub-list">
+          {% assign shown = true %}
+        {% endunless %}
+      {% endif %}
       <li>{% include pub-entry.html pub=pub %}</li>
     {% endfor %}
     {% if shown %}</ol>{% endif %}
   {% endfor %}
+  {% if y > 2023 %}</ol>{% endif %}
 {% endfor %}
